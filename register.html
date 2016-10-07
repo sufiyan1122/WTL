@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Student Registration</title>	
+       
+	</head>
+
+	<body>
+		<h1>Welcome to Aiktc</h1>
+		<form action="print_info1.php" method="post">
+			<fieldset>
+				<legend>Personal information</legend>
+					<label for="roll_no">Roll No:</label>
+					<input id="roll_no" type="text" name="rollno" class="form-input" required="required" />
+					<br>
+					<br>
+
+					<label for="sname">Name:</label>
+					<input id="sname" type="text" name="name" class="form-input" required="required" />
+					<br>
+					<br>
+
+					<label for="">Gender:</label>
+					<label for="male">Male:</label>
+					<input type="radio" name="gender" class="form-radio" value="male" id="male" required="required" />
+					<label for="female">Female:</label>
+					<input type="radio" name="gender" class="form-radio" value="female" id="female" required="required" />
+					<br>
+					<br>
+
+					<label for="address">Address:</label>
+					<textarea name="address" id="address" cols="8" rows="3" req uired="required"></textarea>
+					<br>
+					<br>
+
+					<label for="dob">Date of Birth:</label>
+					<input type="date" placeholder="YYYY-MM-DD" name="dob" class="form-date" id="dob" required="required" />
+					<br>
+					<br>
+			</fieldset>
+
+
+			<fieldset>
+				<legend>Academics information</legend>
+					<label for="sem">Semester:</label>	
+					<select name="sem" id="sem" class="form-input" required="required">
+						<option value="" selected>-----</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+					</select>
+					<br>
+					<br>
+
+					<label for="email">Email:</label>
+					<input type="email" name="email" class="form-input" required="required" />
+					<br>
+					<br>
+
+					<label for="dept">Department:</label>	
+					<select name="dept" id="dept" class="form-input" required="required">
+						<option value="" selected>-----</option>
+						<option value="co">Computer</option>
+						<option value="me">Mechnical</option>
+						<option value="ce">civil</option>
+						<option value="ee">Electrical</option>
+					</select>
+					<br>
+					<br>
+
+					<label for="batch">Batch:</label>	
+					<select name="batch" id="batch" class="form-input" required="required">
+						<option value="" selected>-----</option>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+					</select>
+					<br>
+					<br>
+
+			</fieldset>
+			<input type="submit" value="Submit"/>
+
+		</form>
+		<script src="js/validate.js" ></script>
+	</body>
+</html>
